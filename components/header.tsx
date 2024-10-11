@@ -45,9 +45,10 @@ export const HeaderSection = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-[#16181e] hover:text-[#1955EE] transition-colors font-medium"
+                  className="text-[#16181e] hover:text-[#1955EE] hover:text-lg transition-colors text-lg  font-medium"
                 >
-                  {item.name}
+                  <strong>{item.name}</strong>
+                  
                 </button>
               ))}
             </nav>

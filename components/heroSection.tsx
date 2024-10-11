@@ -52,7 +52,7 @@ export const HeroSection = () => {
                     <span className="text-[#1955EE]"> Digital Journey</span>
                   </motion.h1>
                   <motion.p variants={fadeInUp} className="text-xl md:text-2xl text-[#4a5568] mb-10">
-                    Pathnovo Solution: Where cutting-edge technology meets visionary design to transform your digital presence.
+                   Where cutting-edge technology meets visionary design to transform your digital presence.
                   </motion.p>
                   <motion.div variants={fadeInUp}>
                     <Link

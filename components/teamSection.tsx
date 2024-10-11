@@ -72,9 +72,9 @@ const ScrollSection = ({ children }: { children: React.ReactNode }) => {
                   {
                     name: "ANKUR SHUKLA (Director)",
                     role: "With a B.Tech and M.Tech. from IIT BHU, a Top Rated freelancer on Upwork, excelling in strategy, tech, and marketing",
-                    image: "",
+                    image: "/images/ankur.jpg",
                     socials: {
-                      linkedin: "#",
+                      linkedin: "https://www.linkedin.com/in/ankur-shukla-developer/",
                       twitter: "#",
                       github: "#"
                     }
@@ -82,9 +82,9 @@ const ScrollSection = ({ children }: { children: React.ReactNode }) => {
                   {
                     name: "AMIT JHA (Director)",
                     role: "B.Tech and M.Tech from IIT BHU, built two startups, and assisted 20+ clients in developing tech solutions.",
-                    image: "",
+                    image: "/images/amit.jpg",
                     socials: {
-                      linkedin: "#",
+                      linkedin: "https://www.linkedin.com/in/amit-kumarjha/",
                       twitter: "#",
                       github: "#"
                     }
@@ -92,7 +92,7 @@ const ScrollSection = ({ children }: { children: React.ReactNode }) => {
                   {
                     name: "VIKAS SIGNH (Director)",
                     role: "B.Tech from IIT BHU, MS and MBA from LSU, with 20 years in IT and consulting at Cognizant E&Y, and PwC.",
-                    image: "",
+                    image: "/images/vikas.jpg",
                     socials: {
                       linkedin: "#",
                       twitter: "#",
@@ -102,7 +102,7 @@ const ScrollSection = ({ children }: { children: React.ReactNode }) => {
                 ].map((member, index) => (
                   <AnimatedCard key={index}>
                     <div className=" relative teamSectionCard" >
-                      <Image src={member.image} alt={member.name} width={400} height={200} className="w-full h-48 object-cover rounded-t-lg" />
+                      <Image src={member.image} alt={member.name} width={400} height={200} className="w-full h-48 object-contain rounded-lg rounded-t-lg" />
                     </div>
                     <div className="p-6">
                       <h3 className="font-bold text-xl mb-2 text-[#16181e]">{member.name}</h3>

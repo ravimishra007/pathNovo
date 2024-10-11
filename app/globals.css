@@ -117,13 +117,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #e0f7fa; /* Light blue background for a different look */
+  background: #e0f7fa; 
   position: relative;
 }
 
 .center-circle {
   position: absolute;
-  width: 120px; /* Different size for the central circle */
+  width: 120px; 
   height: 120px;
   display: flex;
   justify-content: center;
@@ -136,40 +136,42 @@ body {
 }
 
 .circle {
+  /* border: 2px solid red; */
   position: absolute;
   border-radius: 50%;
-  border: 2px dashed rgba(0, 0, 0, 0.2); /* Dashed border for a different visual style */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Dashed border for a different visual style */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* A stronger shadow for more depth */
 }
 
 .outer-circle {
-  width: 450px; /* Slightly larger than the left side */
-  height: 450px;
-  animation: rotateCounterClockwise 20s linear infinite; /* Slower animation */
+  width: 500px; /* Slightly larger than the left side */
+  height: 500px;
+  animation: rotateCounterClockwise 50s linear infinite; /* Slower animation */
 }
 
 .middle-circle {
-  width: 350px;
-  height: 350px;
-  animation: rotateClockwise 20s linear infinite; /* Faster animation */
+  width: 360px;
+  height: 360px;
+  animation: rotateClockwise 50s linear infinite; /* Faster animation */
 }
 
 .inner-circle {
-  width: 250px;
-  height: 250px;
-  animation: rotateCounterClockwise 20s linear infinite; /* Slowest animation */
+  width: 210px;
+  height: 210px;
+  animation: rotateClockwise 50s linear infinite; /* Slowest animation */
 }
 
 .tech-icon-container {
   position: absolute;
-  width: 70px; /* Different size for icons */
+  width: 70px; 
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
-  border-radius: 50%;
-  padding: 10px; /* Increased padding */
+  /* border: 2px solid red; */
+  background: rgba(255, 0, 0, 0);
+  border-radius:50%;
+  padding: 2px; 
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for icons */
 }
 
@@ -178,6 +180,11 @@ body {
   height: 100%;
   object-fit: contain;
   border-radius: 50%;
+  transform: translateZ(20px); /* Pop the image forward */
+  transition: transform 0.3s ease; /* Smooth transition for the 3D effect */
+}
+.tech-icon-container:hover img {
+  transform: translateZ(40px); /* Pop out more on hover for added effect */
 }
 
 .tech-icon-container:nth-child(1) {
@@ -259,7 +266,7 @@ position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px ;
+  width: 580px ;
   height: 100vh;
   /* background: #e0f7fa;  */
   position: relative;
@@ -286,38 +293,39 @@ position: absolute;
 .rightSideAnimation_circle {
   position: absolute;
   border-radius: 50%;
-  border: 2px dashed rgba(0, 0, 0, 0.2); /* Dashed border for a different visual style */
+  border: 1px solid rgba(0, 0, 0, 0.2); /* Dashed border for a different visual style */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* A stronger shadow for more depth */
 }
 
 .rightSideAnimation_outer-circle {
-  width: 450px; /* Slightly larger than the left side */
-  height: 450px;
-  animation: rotateCounterClockwise 20s linear infinite; /* Slower animation */
+  width: 500px; /* Slightly larger than the left side */
+  height: 500px;
+  animation: rotateCounterClockwise 50s linear infinite; /* Slower animation */
 }
 
 .rightSideAnimation_middle-circle {
-  width: 350px;
-  height: 350px;
-  animation: rotateClockwise 20s linear infinite; /* Faster animation */
+  width: 360px;
+  height: 360px;
+  animation: rotateClockwise 50s linear infinite; /* Faster animation */
 }
 
 .rightSideAnimation_inner-circle {
-  width: 250px;
-  height: 250px;
-  animation: rotateCounterClockwise 20s linear infinite; /* Slowest animation */
+  width: 210px;
+  height: 210px;
+  animation: rotateClockwise 50s linear infinite; /* Slowest animation */
 }
 
 .rightSideAnimation_tech-icon-container {
   position: absolute;
-  width: 70px; /* Different size for icons */
-  height: 70px;
+  width: 80px; /* Different size for icons */
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: white;
+  /*   background: rgba(255, 0, 0, 0); */
   border-radius: 50%;
-  padding: 10px; /* Increased padding */
+  padding: 2px; /* Increased padding */
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for icons */
 }
 
@@ -326,6 +334,12 @@ position: absolute;
   height: 100%;
   object-fit: contain;
   border-radius: 50%;
+  transform: translateZ(20px); /* Pop the image forward */
+  transition: transform 0.3s ease; /* Smooth transition for the 3D effect */
+
+}
+.rightSideAnimation_tech-icon-container:hover img {
+  transform: translateZ(40px); /* Pop out more on hover for added effect */
 }
 
 .rightSideAnimation_tech-icon-container:nth-child(1) {
@@ -555,7 +569,6 @@ position: absolute;
 
 /* button */
 
-/* From Uiverse.io by gharsh11032000 */ 
 .animated-button {
   width: 28%;
   margin: auto;
@@ -795,10 +808,9 @@ position: absolute;
     align-items: center;
 
   }
-  .teamSectionCard{
-    /* border: 2px solid greenyellow; */
+  /* .teamSectionCard{
     display: none;
-  }
+  } */
   .animated-buttonNew{
     width: 90%;
     margin: auto;
