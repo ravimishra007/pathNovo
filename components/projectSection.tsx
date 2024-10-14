@@ -3,24 +3,16 @@ import { useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion,  useInView } from 'framer-motion'
-import { FiArrowRight, FiZap, FiBarChart2,  FiCode, FiStar } from 'react-icons/fi'
+import { FiArrowRight } from 'react-icons/fi'
 
 
-const process = [
-    { name: 'Discovery', icon: <FiStar />, description: 'We start by understanding your business goals and challenges.' },
-    { name: 'Strategy', icon: <FiBarChart2 />, description: 'Our team develops a tailored strategy to meet your objectives.' },
-    { name: 'Implementation', icon: <FiCode />, description: 'We bring your vision to life with cutting-edge technology.' },
-    { name: 'Optimization', icon: <FiZap />, description: 'Continuous improvement to maximize your digital performance.' },
-  ]
+
 const fadeInUp = {
     initial: { opacity: 0, y: 20 },
     animate: { opacity: 1, y: 0 },
     transition: { duration: 0.5 }
   }
 
-  const staggerChildren = {
-    animate: { transition: { staggerChildren: 0.1 } }
-  }
 const ScrollSection = ({ children }: { children: React.ReactNode }) => {
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true, amount: 0.2 })
@@ -68,7 +60,7 @@ export const ProjectSection = () => {
                     Featured <span className="text-[#1955EE]">Projects</span>
                   </h2>
                   <p className="text-xl text-[#4a5568] max-w-2xl mx-auto">
-                    Discover how we've helped businesses transform their digital presence and achieve remarkable results.
+                    Discover how we&apos;ve helped businesses transform their digital presence and achieve remarkable results.
                   </p>
                 </motion.div>
                 <div className="grid md:grid-cols-3 gap-8">

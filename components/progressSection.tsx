@@ -15,9 +15,7 @@ const fadeInUp = {
     transition: { duration: 0.5 }
   }
 
-  const staggerChildren = {
-    animate: { transition: { staggerChildren: 0.1 } }
-  }
+ 
 const ScrollSection = ({ children }: { children: React.ReactNode }) => {
     const ref = useRef(null)
     const isInView = useInView(ref, { once: true, amount: 0.2 })

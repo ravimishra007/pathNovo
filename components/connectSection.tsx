@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 
@@ -51,8 +51,8 @@ export const ConnectSection = () => {
                 variants={fadeInUp}
                 className="text-xl mb-8 text-white opacity-90"
               >
-                Let's work together to create innovative solutions that elevate
-                your business.
+              Let&apos;s work together to create innovative solutions that elevate your business.
+
               </motion.p>
               <motion.div variants={fadeInUp}>
                 <Link
